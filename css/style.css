@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    /* variables */
+    /* white */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-gray: hsl(212, 45%, 89%);
+    
+    /* blue */
+    --clr-grayish-blue: hsl(220, 15%, 55%);
+    --clr-dark-blue: hsl(218, 44%, 22%);
+
+    /* misc variables */
+    --font-size: 15px;
+    --mobile-max-width: 375px;
+    --max-width: 1440px;
+
+    /* fonts */
+    --font-family-primary: "outfit"
+}
+
+/* global styles */
+
+*,::before,::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--font-family-primary);
+}
+
+img {
+    width: 100%;
+}
+
+/* page styles */
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 619px;
+    background-color: var(--clr-light-gray);
+}
+
+/* styles for the whole card */
+.qr-card {
+    text-align: center;
+    padding: 1rem;
+    max-width: 375px;
+    background-color: var(--clr-white);
+    border-radius: 1.5rem;
+    /* centers main card pushes attribution to the bottom */
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+/* styles for the qr image */
+.qr-code {
+    border-radius: 1rem;
+}
+
+/* styles for the info section under the image */
+.qr-info {
+    margin: 1.5rem 1.25rem;
+}
+
+.qr-info h4 {
+    color: var(--clr-dark-blue);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.qr-info p {
+    color: var(--clr-grayish-blue);
+    font-size: 1.1rem;
+}
+
+/* styles for the attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
